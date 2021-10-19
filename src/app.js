@@ -85,6 +85,6 @@ app.get('*', (req, res)=>{
 })
 
 //starting up server
-app.listen(PORT, ()=>{
+app.listen(port, ()=>{
   console.log("Server started on http://localhost:3000");
 })
