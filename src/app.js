@@ -16,6 +16,9 @@ const partialPath = path.join(__dirname, "../templates/partials");
 //creating app instance
 const app = express();
 
+//setting port
+const port = process.env.PORT||3000;
+
 //making express js to use provided static content path
 app.use(express.static(publicPath));
 
@@ -82,6 +85,6 @@ app.get('*', (req, res)=>{
 })
 
 //starting up server
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
   console.log("Server started on http://localhost:3000");
 })
