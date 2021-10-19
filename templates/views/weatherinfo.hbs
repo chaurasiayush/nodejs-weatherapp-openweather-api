@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="img/icon1.png">
+  <title>{{title}}</title>
+</head>
+<body>
+  
+  <article class="main">
+
+  {{>header}}
+
+  <h2>Wather</h2>
+  <form id ='wform'>
+    <p><strong>Enter Location to search weather info</strong></p>
+    <input type='text' placeholder='city' name='location' id='location'>
+    <input type='submit' value='search' id='submit-button'/>
+  </form>
+
+  <p id='process-info'></p>
+
+  <article id='linfo'>
+      <p class='big'><span id='city'>Kanpur</span></p>
+      <p class='small'>Country : <span id='country'>IN</span></p>
+  </article>
+
+  <section id='info-section'> 
+    <img src='img/cloud.svg' alt='cloud' id='cloud'>
+
+    <article id='winfo'>
+      <p class='big'><span id='tempvalue'>27</span>&deg;C</p>
+      <p class='small'>Realfeel: <span id='realfeelvalue'>30</span>&deg;C</p>
+    </article>
+
+  </section>
+
+  <script src='/scripts/weather/script.js' ></script>
+    
+    
+  </article>
+  {{>footer}}
+
+  <!-- <img src="img/images.png" alt="sample profile image"/> -->
+</body>
+</html>
