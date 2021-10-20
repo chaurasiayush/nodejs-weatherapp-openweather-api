@@ -43,6 +43,7 @@ form.addEventListener('submit', (e) => {
       //location display
       cityDisplay.textContent = data.name;
       countryDisplay.textContent = data.country;
+
       linfo.style.display = 'inline-block';
     })
   })
