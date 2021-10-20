@@ -14,10 +14,10 @@ body{
 
 }
 
-.scroll{
+/* .scroll{
   overflow-x: auto;
   white-space: nowrap;
-}
+} */
 
 .main{
   /* background-color: #eee; */
@@ -97,21 +97,27 @@ a{
 }
 
 /* linfo */
-#linfo{
+.linfo-hidden{
   display: none;
-  margin-top: 58px;
 
+}
+
+.linfo-visible{
+  display: inline-block;
 }
 
 /* Weather Info */
 
-#info-section{
+.info-section-hidden{
   display: none;
-  margin-top: 58px;
-  margin-left: 126px;
-
-
 }
+
+.info-section-visible{
+  display:inline-block;
+  margin-top: 58px;
+  margin-left: 28px;
+}
+
 .big{
   font-size: 70px;
   margin-top: 40px;
@@ -153,4 +159,28 @@ a{
   margin-top: 34px;
   text-align: center;
   font-size: 21px;
+}
+
+
+
+/* Responsive config */
+
+@media(max-width:800px){
+  .linfo-visible{
+    display: block;
+  }
+  .info-section-visible{
+    display:block;
+    margin-top: 58px;
+    margin-left: inherit;
+  }
+  .big{
+    font-size: 47px;
+    margin-top: 40px;
+    margin-bottom: -16px;
+    color:black;
+  }
+  .small{
+    font-size: 16px;
+  }
 }

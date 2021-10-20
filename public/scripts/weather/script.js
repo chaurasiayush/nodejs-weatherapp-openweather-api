@@ -30,6 +30,8 @@ form.addEventListener('submit', (e) => {
       // console.log(data);
       if(data.error){
         processInfo.textContent = data.error;
+        infoSection.classList.remove('info-section-visible');
+        linfo.classList.remove('linfo-visible');
         return console.log(data.error);
        
       }
@@ -38,13 +40,13 @@ form.addEventListener('submit', (e) => {
       
       tempvalue.textContent = data.temp;
       realvalue.textContent = data.feels_like;
-      infoSection.style.display = 'inline-block';
+      infoSection.classList.add('info-section-visible');
 
       //location display
       cityDisplay.textContent = data.name;
       countryDisplay.textContent = data.country;
 
-      linfo.style.display = 'inline-block';
+      linfo.classList.add('linfo-visible');
     })
   })
 })
