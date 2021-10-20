@@ -4,12 +4,15 @@
   max-width: 900px;
   /* margin:0px;
   padding:0px; */
+
 }
 
 body{
   display : flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .main{
